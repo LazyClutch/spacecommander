@@ -37,7 +37,6 @@ function format_objc() {
   return $success 
 }
 
-success=0
 format_objc
-
+success=0
 exit $success
