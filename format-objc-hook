@@ -31,7 +31,8 @@ function format_objc() {
     fi
   done
   if [ $success -gt 0 ]; then
-      echo -e "\n🚀  Format and stage all affected files:\n\t \"$DIR\"/format-objc-files.sh -s"
+  	eval "\"$DIR\"/format-objc-files.sh -s"
+    #echo -e "\n🚀  Format and stage all affected files:\n\t \"$DIR\"/format-objc-files.sh -s"
   fi
   return $success 
 }
