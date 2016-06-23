@@ -38,3 +38,5 @@ python "$DIR"/custom/HasIncludeSpaceRemover.py "$1"
 python "$DIR"/custom/NewLineAtEndOfFileInserter.py "$1"
 # Add braces to single line if statement.
 python "$DIR"/custom/AddBracesToControlStatement.py "$1"
+# Add spaces to Nonnull and Nullable keyword
+python "$DIR"/custom/AddSpaceToNonnull.py "$1"
