@@ -11,11 +11,11 @@ class MacroSemicolonAppender(AbstractCustomFormatter):
 
             if stripped_line.startswith("if") or stripped_line.startswith("for") or stripped_line.startswith("while"):
             	if stripped_line.endswith(")"):
-            		line = line.rstrip() + "{"
+            		line = line.rstrip() + "{\n"
             		tem_line_number = line_number
 
             if tem_line_number == line_number - 2 and tem_line_number > 0:
-            	line = line.rstrip() + "}"
+            	line = "}\n" + line.rstrip()
 
             lines_to_write.append(line)
 
